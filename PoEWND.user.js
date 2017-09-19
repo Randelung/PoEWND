@@ -17,7 +17,7 @@ const ModType = Object.freeze({
 	SUFFIX: Symbol("Suffix")
 });
 
-RegEx = [];
+const RegEx = [];
 
 function splitIntoRegexAndValues(response) {
 	const table = response.match(/<table(?:.|\n)*<\/table>/)[0];
@@ -204,7 +204,7 @@ function loadData() {
 	const rareItems = document.getElementsByClassName("rarePopup");
 	const uniqueItems = document.getElementsByClassName("uniquePopup");
 	const gemItems = document.getElementsByClassName("gemPopup");
-	allItems = [];
+	const allItems = [];
 	Array.prototype.push.apply(allItems, normalItems);
 	Array.prototype.push.apply(allItems, magicItems);
 	Array.prototype.push.apply(allItems, rareItems);
